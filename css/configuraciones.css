@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+:root{
+    --colorVerdeOscuro: #34483d;
+    --colorVerdeUnPocoOscuro: #3b8560;
+    --colorVerde: #469788;
+    --colorVerdeClaro: #a0c46d;
+
+    --tamañoTexto: ;
+    --tamañoParrafo: ;
+}
