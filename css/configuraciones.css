@@ -14,6 +14,6 @@ html{
     --colorVerde: #469788;
     --colorVerdeClaro: #a0c46d;
 
-    --tamañoTexto: ;
-    --tamañoParrafo: ;
+    --tamañoTexto: 15px;
+    --tamañoParrafo: 30px;
 }
