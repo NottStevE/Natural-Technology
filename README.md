@@ -6,6 +6,7 @@
 - Alan Estuardo Monasterio Peréz - V computación
 - Estefany Pamela Jiménez Gonzales - V biológicas
 - Madelyne Dayana Michelle Toc Curruchic - V biológicas
+- Karen Mayerli Dávila Vicente - V biológicas
 - Yamna Kristell García Piche - V diseño
 - Karen Stephanye Ical Boror - V diseño
 
