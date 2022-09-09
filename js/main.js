@@ -1,3 +1,5 @@
-import { homepage } from "./componentes/homepage.js";
+import { home_page } from "./componentes/homepage.js";
 
-homepage();
+export let root = document.querySelector("#root");
+home_page();
+
