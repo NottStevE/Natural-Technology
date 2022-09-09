@@ -35,6 +35,30 @@ let inicio = [
                 '<p class="boton_vamos" id="boton_vamos">' + 'VAMOS!' + '</p>' +
             '</div>' 
     },
+    {
+        comienzo: 
+            '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/imagen%201.png?raw=true" class="imagen_1">' + 
+            '<div class="texto_2">' + 
+                '<h2>' + '¿Qué es Health Wellness?' + '</h2>' +
+                '<p>' + 'Esta página esta aquí para informarte y ayudarte acerca de los alimentos que consumes y como mejorar tu alimetación.' + '</p>' +
+            '</div>'
+    },
+    {
+        comienzo: 
+            '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/imagen%202.png?raw=true" class="imagen_2">' + 
+            '<div class="texto_2">' + 
+                '<h2>' + 'Aprende Sobre...' + '</h2>' +
+                '<p>' + 'Tendrás información por expertos acerca de proteínas, carbohidratos, lípidos y Vitaminas ¿Te parece?' + '</p>' +
+            '</div>'
+    },
+    {
+        comienzo: 
+            '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/imagen%203.png?raw=true" class="imagen_3">' + 
+            '<div class="texto_2">' + 
+                '<h2>' + 'Mejora tu Alimentación' + '</h2>' +
+                '<p>' + 'Estamos seguros que sera de beneficio para ti esta aplicación, aprende y disfruta lo que tenemos para ti!' + '</p>' +
+            '</div>'
+    }
 ];
 export function home_page(){
     let seccion = '<div id="caja">' + '</div>';
