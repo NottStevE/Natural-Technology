@@ -9,10 +9,10 @@ html{
     font-family: 'Nunito', sans-serif;
 }
 :root{
-    --colorVerdeOscuro: #34483d;
-    --colorVerdeUnPocoOscuro: #3b8560;
-    --colorVerde: #469788;
-    --colorVerdeClaro: #a0c46d;
+    --colorVerdeOscuro: #274215;
+    --colorVerde: #85bb4d;
+    --colorNaranja: #f8931f;
+    --colorNaranjaOscuro: #dd7236;
 
     --tamañoTexto: 15px;
     --tamañoParrafo: 30px;
