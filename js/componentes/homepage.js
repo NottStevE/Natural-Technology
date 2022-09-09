@@ -3,7 +3,7 @@ let inicio = [
     {
         comienzo: 
             '<div class="component">' + 
-                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/decoracion%20pelotas.png?raw=true">' + 
+            
             '</div>' +
             '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo.png?raw=true" class="logo">' + 
             '<div class="texto">' + 
