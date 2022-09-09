@@ -1,6 +1,6 @@
 # Natural-Technology
 
-**INTEGRANTES
+##INTEGRANTES
 Brandon Stev Gómez Boror - V computación
 Marlon David Martinez Cojulún - V computación
 Estefany Pamela Jiménez Gonzales - V biológicas
@@ -10,10 +10,10 @@ Karen Stephanye Ical Boror - V diseño
 
 
 
-**OBJETIVO DEL PROYECTO
+##OBJETIVO DEL PROYECTO
 
 
-**DESCRIPCIÓN DE LAS CONFIGURACIONES DEL PROYECTO
+##DESCRIPCIÓN DE LAS CONFIGURACIONES DEL PROYECTO
 se creó la estructura base del html y también se crearon las estructuras generales del css
 
 
