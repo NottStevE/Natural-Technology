@@ -1,0 +1,124 @@
+#root{
+    width: 37.5rem;
+    height: 66.7rem;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.component{
+    width: 37.5rem;
+    height: auto;
+}
+.component img{
+    width: 100%;
+}
+.logo{
+    width: 32.5rem;
+    height: 20.5rem;
+}
+.texto{
+    width: 29.2rem;
+    height: auto;
+    text-align: center;
+    font-size: var(--tamañoTexto);
+    margin: 56px 0 0 0;
+}
+.opciones{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.opciones img{
+    height: 25px;
+    width: 11.42px;
+    cursor: pointer;
+}
+.opciones p{
+    font-size: var(--tamañoTexto);
+    font-weight: 400;
+    cursor: pointer;
+}
+.botones{
+    width: 12rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.botones div{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+}
+.texto_2{
+    width: 35.5rem;
+    height: auto;
+    text-align: center;
+}
+.texto_2 h2{
+    font-size: var(--tamañoParrafo);
+    color: #F8931F;
+    font-weight: 600;
+}
+.texto_2 p{
+    font-size: var(--tamañoTexto);
+    font-weight: 400;
+}
+#caja, #caja_2{
+    width: 100%;
+    height: 100%;
+}
+#caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flecha_izquierda{
+    display: none;
+}
+.activar{
+    display: flex;
+}
+.desactivar{
+    display: none;
+}
+.boton_vamos{
+    display: none;
+}
+.boton_1{
+    background-color: #B1B1B1;
+}
+.boton_2{
+    background-color: #B1B1B1;
+}
+.boton_3{
+    background-color: #B1B1B1;
+}
+.boton_4{
+    background-color: #B1B1B1;
+}
+.cambiar_color{
+    background-color: #274215;;
+}
+.imagen_1{
+    width: 35.5rem;
+    height: 28.1rem;
+    margin: 8.5rem 0 5.7rem 0;
+}
+.imagen_2{
+    width: 33.4rem;
+    height: 32.1rem;
+    margin: 4.5rem 0 5.9rem 0;
+}
+.imagen_3{
+    width: 36.1rem;
+    height: 32rem;
+    margin: 4.6rem 0 6.3rem 0;
+}
