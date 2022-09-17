@@ -1,16 +1,21 @@
 import { root } from "../main.js";
+import { menu } from "./menu.js";
+import { insertar_menu } from "./menu.js"
+
 let inicio = [
     {
         comienzo: 
+        '<div id="contenedor_comienzo" class="contenedor_comienzo">' + 
             '<div class="component">' + 
-            
+                
             '</div>' +
             '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo.png?raw=true" class="logo">' + 
             '<div class="texto">' + 
                 '<p>' + 'Hola, es un gusto tenerte aquí en Health Wellness ¿quieres comenzar a conocer más sobre esto?' + '</p>' +
-            '</div>',
+            '</div>' +
+        '</div>',
         opciones: 
-            '<div class="opciones">' + 
+            '<div class="opciones" id="contenedor_opciones">' + 
                 '<div id="flecha_izquierda" class="flecha_izquierda">' +
                     '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/flecha%20izquierda%200.2.png?raw=true">' +
                 '</div>' +
@@ -53,11 +58,13 @@ let inicio = [
     },
     {
         comienzo: 
+        '<div id="contenedor_comienzo" class="contenedor_comienzo">' + 
             '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/imagen%203.png?raw=true" class="imagen_3">' + 
             '<div class="texto_2">' + 
                 '<h2>' + 'Mejora tu Alimentación' + '</h2>' +
                 '<p>' + 'Estamos seguros que sera de beneficio para ti esta aplicación, aprende y disfruta lo que tenemos para ti!' + '</p>' +
-            '</div>'
+            '</div>' +
+        '</div>'
     }
 ];
 export function home_page(){
@@ -70,7 +77,7 @@ export function home_page(){
     let caja_2 = document.querySelector("#caja_2");
     
     let posicion = 0;
-    caja.innerHTML = inicio[posicion].comienzo;
+    caja.innerHTML = inicio[posicion].comienzo + menu;
     caja_2.innerHTML = inicio[posicion].opciones;
     
     let flecha_derecha = document.querySelector("#flecha_derecha");
@@ -85,7 +92,8 @@ export function home_page(){
     boton_1.classList.add("cambiar_color");
     function moverSeccionesDerecha(){
         posicion++;
-        caja.innerHTML = inicio[posicion].comienzo;
+        caja.innerHTML = inicio[posicion].comienzo + menu;
+        insertar_menu();
         if(posicion == 1){
             flecha_izquierda.classList.add("activar");
             boton_saltar.classList.add("desactivar");
@@ -103,7 +111,8 @@ export function home_page(){
     }
     function moverSeccionesIzquierda(){
         posicion--;
-        caja.innerHTML = inicio[posicion].comienzo;
+        caja.innerHTML = inicio[posicion].comienzo + menu;
+        insertar_menu();
         if(posicion == 0){
             flecha_izquierda.classList.remove("activar");
             boton_saltar.classList.remove("desactivar");
@@ -120,5 +129,5 @@ export function home_page(){
         }
     }
     flecha_derecha.addEventListener('click', moverSeccionesDerecha);
-    flecha_izquierda.addEventListener('click', moverSeccionesIzquierda)
+    flecha_izquierda.addEventListener('click', moverSeccionesIzquierda);
 }
