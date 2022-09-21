@@ -1,3 +1,5 @@
+import { estadistica } from "./estadistica.js";
+
 export let menu = 
     '<div class="contenedor desactivar" id="contenedor">' +
         '<div class="fondo">' + 
@@ -55,6 +57,7 @@ export function insertar_menu(){
         contenedor_comienzo.classList.add("desactivar");
         contenedor_opciones.classList.add("desactivar");
         contenedor_comienzo_2.classList.add("desactivar");
+        estadistica();
     }
     boton_saltar.addEventListener('click', saltar);
     boton_vamos.addEventListener('click', saltar);
