@@ -1,0 +1,299 @@
+.seccion_estadistica{
+    width: 100%;
+    height: auto;
+    margin: 65rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccion_plato{
+    width: 37.5rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.seccion_plato img{
+    width: 27.4rem;
+    height: 28.5rem;
+    margin: 1.3rem 0 0 0.4rem;
+}
+.seccion_plato h2{
+    color: var(--colorVerdeOscuro);
+    font-size: 3rem;
+    font-family: 'Fredoka', sans-serif;
+    position: absolute;
+}
+.seccion_plato div{
+    border-radius: 100%;
+    position: absolute;
+}
+.circulo_1{
+    width: 31px;
+    height: 29px;
+    background-color: var(--colorNaranjaOscuro);
+    left: 105px;
+    top: 0;
+}
+.circulo_2{
+    width: 25px;
+    height: 24px;
+    top: 36px;
+    left: 63px;
+    background-color: var(--colorNaranja);
+}
+.circulo_3{
+    width: 31px;
+    height: 29px;
+    background-color: var(--colorNaranja);
+    top: 241px;
+    left: 32px;
+}
+.circulo_4{
+    width: 25px;
+    height: 24px;
+    background-color: var(--colorNaranjaOscuro);
+    top: 289px;
+    left: 72px;
+}
+.circulo_5{
+    width: 25px;
+    height: 24px;
+    background-color: var(--colorVerde);
+    top: 298px;
+    left: 263px;
+}
+.circulo_6{
+    width: 30px;
+    height: 29px;
+    background-color: var(--colorVerdeOscuro);
+    top: 260px;
+    left: 296px;
+}
+.porcentaje_1{
+    top: 0;
+    left: 173px;
+}
+.porcentaje_2{
+    top: 142px;
+    left: 20px;
+}
+.porcentaje_3{
+    top: 296px;
+    left: 169px;
+}
+.texto_plato{
+    font-size: 15px;
+    width: 279px;
+    height: 162px;
+    margin: 6.1rem 0 0 0;
+    text-align: justify;
+}
+.estadistica{
+    width: 27.9rem;
+    height: auto;
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    margin: 4.5rem 0 0 0;
+    padding: 6rem 0 4.7rem 0;
+    position: relative;
+}
+.estadistica h2{
+    font-size: 50px;
+    color: var(--colorVerdeOscuro);
+    font-weight: 700;
+    font-family: 'Fredoka', sans-serif;
+    margin: 0 0 1.9rem 0;
+}
+.estadistica p{
+    width: 100%;
+    height: auto;
+    font-size: var(--tamañoTexto);
+    text-align: justify;
+    margin: 0 0 1.4rem 0;
+}
+.grafico_pastel{
+    position: absolute;
+    right: 11.2rem;
+}
+.porcentajes_estadistica{
+    margin: 6rem 0 0 17rem;
+    width: 13.7rem;
+    height: auto;
+}
+.caja_1_estadistica{
+    display: flex;
+}
+.caja_1_estadistica p{
+    width: 11rem;
+    text-align: center;
+    color: var(--colorVerdeOscuro);
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    font-size: var(--tamañoTexto);
+    font-weight: 700;
+}
+.circulo_naranja_estadistica{
+    width: 2.3rem;
+    height: 2.4rem;
+    border-radius: 100%;
+    background-color: var(--colorNaranja);
+}
+.circulo_verde_estadistica{
+    width: 2.3rem;
+    height: 2.4rem;
+    border-radius: 100%;
+    background-color: var(--colorVerde);
+    margin: 0 1rem 2.1rem 0;
+}
+.circulo_rojo_estadistica{
+    width: 2.3rem;
+    height: 2.4rem;
+    border-radius: 100%;
+    background-color: var(--colorNaranjaOscuro);
+    margin-right: 0.7rem;
+}
+.seccion_objetos_estadistica{
+    width: 100%;
+    height: 19.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 0 0 0;
+}
+.seccion_objetos_estadistica div{
+    width: 7.9rem;
+    height: 8.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.seccion_objetos_estadistica p{
+    text-align: center;
+    font-weight: 400;
+}
+@media screen and (min-width: 1366px) {
+    .seccion_plato img{
+        width: 87.5rem;
+        height: 90.5rem;
+    }
+    .seccion_plato{
+        width: 108.8rem;
+    }
+    .seccion_estadistica{
+        width: 100%;
+        margin: 45rem 0 0 0;
+    }
+    .seccion_plato h2{
+        font-size: 8rem;
+    }
+    .porcentaje_1{
+        left: 48.6rem;
+    }
+    .porcentaje_2{
+        top: 44rem;
+    }
+    .porcentaje_3{
+        top: 90.5rem;
+        left: 48.6rem;
+    }
+    .circulo_1{
+        left: 20.9rem;
+        width: 8rem;
+        height: 8.5rem;
+    }
+    .circulo_2{
+        left: 8.9rem;
+        width: 10rem;
+        height: 10.4rem;
+        top: 10rem;
+    }
+    .circulo_3{
+        left: 11.9rem;
+        top: 75.3rem;
+        width: 8rem;
+        height: 8.5rem;
+    }
+    .circulo_4{
+        left: 22.8rem;
+        top: 83.8rem;
+        width: 10rem;
+        height: 10.4rem;
+    }
+    .circulo_5{
+        width: 10rem;
+        height: 10.4rem;
+        left: 82.2rem;
+        top: 81.2rem;
+    }
+    .circulo_6{
+        width: 8rem;
+        height: 8.5rem;
+        top: 69.5rem;
+        left: 93.4rem;
+    }
+    .texto_plato{
+        font-size: 4.5rem;
+        width: 100%;
+        margin: 15rem 0 0 0;
+        height: auto;
+    }
+    .estadistica{
+        width: 110.8rem;
+        margin: 8.2rem 0 0 0;
+        border-top: 2px solid #EEEEEE;
+        border-bottom: 2px solid #EEEEEE;
+        padding: 14.3rem 0 12.7rem 0;
+    }
+    .estadistica h2{
+        font-size: 17rem;
+        margin: 0 0 4.5rem 0;
+    }
+    .estadistica p{
+        font-size: 4.5rem;
+        margin: 0 0 5.8rem 0;
+    }
+    .grafico_pastel{
+        width: 63.9rem;
+        height: 66.4rem;
+        right: 58.2rem;
+    }
+    .porcentajes_estadistica{
+        width: auto;
+        margin: 17.2rem 0 0 60rem;
+    }
+    .caja_1_estadistica p{
+        width: 50.3rem;
+        font-size: 4rem;
+        text-align: start;
+        margin: 0;
+    }
+    .circulo_naranja_estadistica{
+        width: 11.8rem;
+        height: 11.6rem;
+    }
+    .circulo_verde_estadistica{
+        width: 11.8rem;
+        height: 11.6rem;
+    }
+    .circulo_rojo_estadistica{
+        width: 11.8rem;
+        height: 11.6rem;
+    }
+    .caja_1_estadistica{
+        width: 62.3rem;
+        height: 11.6rem;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 6.2rem 0;
+    }
+    .seccion_objetos_estadistica{
+        margin: 100%;
+        height: 67.1rem;
+        margin: 10.5rem 0 0 0;
+    }
+    .seccion_objetos_estadistica div{
+        width: 29.8rem;
+        height: auto;
+    }
+}
