@@ -91,9 +91,15 @@
     position: absolute;
     top: 0;
 }
+.menu_desplegable a{
+    font-size: 15px;
+    color: white;
+    text-decoration:none;
+}
 .menu_desplegable p{
     font-size: 15px;
     color: white;
+    cursor: pointer;
 }
 .menu_desplegable div{
     width: 100%;
@@ -144,10 +150,10 @@
         justify-content: space-around;
         align-items: center;
     }
-    .menu_compu p{
+    .menu_compu a{
         font-size: 40px;
         color: white;
-        cursor: pointer;
+        text-decoration:none;
     }
     .menu img{
         width: 27.7rem;

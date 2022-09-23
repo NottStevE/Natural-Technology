@@ -5,33 +5,33 @@ export let menu =
         '<div class="fondo">' + 
             '<div id="menu" class="menu">' + 
             '<div class="menu_compu">' + 
-                '<p>' + 'Proteínas' + '</p>' +
-                '<p>' + 'Carbohidratos' + '</p>' +
+                '<a href="./proteina.html">' + 'Proteínas' + '</a>' +
+                '<a>' + 'Carbohidratos' + '</a>' +
                 '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu%20compu.png?raw=true">' +
-                '<p>' + 'Lípidos' + '</p>' +
-                '<p>' + 'Vitaminas' + '</p>' +
+                '<a>' + 'Lípidos' + '</a>' +
+                '<a>' + 'Vitaminas' + '</a>' +
             '</div>' +
                 '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/icono%20menu.png?raw=true" id="boton_menu_desplegable">' + 
                 '<div class="fondo_menu desactivar" id="menu_desplegable">' + 
                     '<div class="menu_desplegable">' + 
                         '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu%20desplegable.png?raw=true">' +
                         '<div id="boton_bienvenida">' + 
-                            '<p>' + 'Bienvenida' + '</p>' +
+                            '<a href="./index.html">' + 'Bienvenida' + '</a>' +
                         '</div>' +
                         '<div id="boton_home" class="menu_decoracion">' + 
                             '<p>' + 'Home' + '</p>' +
                         '</div>' +
                         '<div id="boton_proteinas">' + 
-                            '<p>' + 'Proteínas' + '</p>' +
+                            '<a href="./proteina.html">' + 'Proteínas' + '</a>' +
                         '</div>' +
                         '<div id="boton_carbohidratos">' + 
-                            '<p>' + 'Carbohidratos' + '</p>' +
+                            '<a>' + 'Carbohidratos' + '</a>' +
                         '</div>' +
                         '<div id="boton_lipidos">' + 
-                            '<p>' + 'Lípidos' + '</p>' +
+                            '<a>' + 'Lípidos' + '</a>' +
                         '</div>' +
                         '<div id="boton_vitaminas">' + 
-                            '<p>' + 'Vitaminas' + '</p>' +
+                            '<a>' + 'Vitaminas' + '</a>' +
                         '</div>' +
                     '</div>' +
                 '</div>' +
