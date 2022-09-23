@@ -1,0 +1,332 @@
+#caja_proteina{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.seccion_1{
+    width: 31.7rem;
+    margin: 40rem 0 0 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px solid #EEEEEE;
+}
+.titulo_proteinas{
+    width: 37.5rem;
+    height: 20.7rem;
+    position: absolute;
+    bottom: -140px;
+    left: 0;
+}
+.contenedor_proteina{
+    margin: 36.8rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.personaje_naranja{
+    width: 11.8rem;
+    height: 10.3rem;
+}
+.contenedor_video{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caja_video{
+    width: 31.8rem;
+    height: 27.8rem;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.9rem 2.1rem 2rem 2rem;
+}
+.caja_video iframe{
+    width: 27.7rem;
+    height: 16.6rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.25);
+}
+.caja_video div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 2.7rem 0 0 0;
+}
+.caja_video p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+    color: #274215;
+}
+.caja_video h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: #DD7236;
+}
+.caja_texto_proteina{
+    width: 100%;
+    height: 35.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.caja_texto_proteina p{
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: justify;
+    width: 29.6rem;
+    height: auto;
+    font-family: 'Montserrat';
+}
+.caja_texto_proteina img{
+    width: 5.5rem;
+    height: 6.5rem;
+    position: absolute;
+}
+.decoracion_texto_1{
+    top: 4rem;
+    left: -3.2rem;
+}
+.decoracion_texto_2{
+    bottom: 3rem;
+    right: 5rem;
+}
+.seccion_2{
+    width: 37.5rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6.9rem 0 0 0;
+}
+.titulos_proteina{
+    width: 100%;
+    height: 20.4rem;
+    margin: 3rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.titulos_proteina h2{
+    font-size: 5rem;
+    font-family: 'Fredoka';
+    position: absolute;
+}
+.titulo_01{
+    color: var(--colorVerdeOscuro);
+    margin: 0 0 0 3.5rem;
+}
+.titulo_02{
+    color: var(--colorNaranja);
+    margin: 4.5rem 0 0 9rem;
+}
+.titulo_03{
+    color: var(--colorVerdeOscuro);
+    margin: 9rem 0 0 6rem;
+}
+.titulo_04{
+    color: var(--colorNaranjaOscuro);
+    margin: 13.5rem 0 0 8rem;
+}
+.alimentos_proteinas{
+    width: 31.8rem;
+    height: 49.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2.1rem 0 0 0;
+    padding-bottom: 2.5rem;
+    border-bottom: 2px solid #EEEEEE;
+}
+.alimentos_proteinas div{
+    width: 14.9rem;
+    height: 13.3rem;
+    margin: 0 0 3.3rem 0;
+    border-radius: 1.2rem;
+    color: white;
+    font-family: 'Fredoka';
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.caja_salmon, .caja_filete{
+    background-color: var(--colorVerde);
+}
+.caja_soja, .caja_pierna{
+    background-color: #F8931F;
+}
+.caja_jamon{
+    background-color: var(--colorNaranjaOscuro);
+}
+.caja_jamon img{
+    width: 12.3rem;
+    height: 7.8rem;
+    position: absolute;
+    bottom: 0;
+}
+.caja_salmon img{
+    width: 12.4rem;
+    height: 10.3rem;
+    position: absolute;
+    bottom: -1rem;
+}
+.alimentos_proteinas div p{
+    position: absolute;
+    top: 1rem;
+}
+.caja_soja img{
+    width: 15rem;
+    height: 8.6rem;
+    position: absolute;
+    bottom: 0;
+    right: 0.9rem;
+}
+.caja_lomo{
+    background-color: var(--colorVerdeOscuro);
+}
+.caja_lomo img{
+    width: 9.6rem;
+    height: 7.2rem;
+    position: absolute;
+    bottom: 0;
+}
+.caja_filete img{
+    width: 13.9rem;
+    height: 7.5rem;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 2rem;
+}
+.caja_pierna img{
+    width: 9rem;
+    height: 6.9rem;
+    position: absolute;
+    bottom: -0.5rem;
+}
+@media screen and (min-width: 1366px){
+    .titulo_proteinas{
+        width: 133.6rem;
+        height: 59.8rem;
+        margin-top: 20rem;
+        bottom: -50rem;
+    }
+    .seccion_1{
+        width: 122.8rem;
+        height: auto;
+        border: none;
+        align-items: center;
+    }
+    .personaje_naranja{
+        width: 30.7rem;
+        height: 26.8rem;
+    }
+    .caja_video{
+        width: 122.8rem;
+        height: 74rem;
+        padding: 8.7rem;
+    }
+    .caja_video iframe{
+        width: 105.3rem;
+        height: 54.3rem;
+        margin: 0 0 2.6rem 0;
+    }
+    .caja_video p{
+        font-size: 4rem;
+    }
+    .caja_video h2{
+        font-size: 4rem;
+    }
+    .caja_texto_proteina{
+        width: 97rem;
+        height: 28.4rem;
+        margin: 22.4rem 0 0 0;
+    }
+    .caja_texto_proteina p{
+        width: 97rem;
+        height: 28.4rem;
+        font-size: 4.5rem;
+    }
+    .decoracion_texto_1{
+        left: -5rem;
+        top: -2rem;
+    }
+    .titulos_proteina{
+        width: 70rem;
+    }
+    .titulos_proteina h2{
+        font-size: 10rem;
+    }
+    .titulo_02{
+        margin-top: 9rem;
+    }
+    .titulo_03{
+        margin-top: 18rem;
+    }
+    .titulo_04{
+        margin-top: 27rem;
+    }
+    .imagen{
+        display: none;
+    }
+    .alimentos_proteinas{
+        width: 122rem;
+        height: 71.9rem;
+        margin-top: 27rem;
+    }
+    .alimentos_proteinas div{
+        width: 37rem;
+        height: 33rem;
+        margin: 0 0 6.9rem 0;
+    }
+    .alimentos_proteinas div p{
+        font-size: 5rem;
+        top: 3rem;
+    }
+    .caja_salmon img{
+        width: 30.6rem;
+        height: 25.4rem;
+    }
+    .caja_soja img{
+        width: 36.9rem;
+        height: 21.2rem;
+    }
+    .caja_jamon img{
+        width: 30.4rem;
+        height: 19.2rem;
+    }
+    .caja_filete img{
+        width: 34.6rem;
+        height: 19.7rem;
+    }
+    .caja_pierna img{
+        width: 27.8rem;
+        height: 23rem;
+    }
+    .caja_lomo img{
+        width: 22.3rem;
+        height: 16.7rem;
+    }
+}
