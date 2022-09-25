@@ -35,7 +35,7 @@ export let menu =
                 '</div>' +
             '</div>' +
             '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu.png?raw=true" class="logo_menu">' +
-            '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/titulo%20proteina%20compu.png?raw=true" class="titulo_proteinas">'
+            '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/titulo%20carbohidratos%20compu.png?raw=true" class="titulo_proteinas">'
         '</div>' +
     '</div>'
 ;
@@ -46,51 +46,51 @@ export function pagina_proteina(){
                 '<div class="contenedor_video">' + 
                 '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/personaje%20naranja.png?raw=true" class="personaje_naranja">' + 
                 '<div class="caja_video">' + 
-                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/FWvrOMpb8IE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>' + '</iframe>' +
+                    '<iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>' + '</iframe>' +
                     '<div>' +
-                        '<p>' + 'Funciones de las Proteínas en el Organismo' + '</p>' +
-                        '<h2>' + '1min' + '</h2>' +
+                        '<p>' + 'Funciones de los Carbohidratos en el Organismo' + '</p>' +
+                        '<h2>' + '3min' + '</h2>' +
                     '</div>' +
                 '</div>' +
                 '</div>' +
                 '<div class="caja_texto_proteina">' + 
                     '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/decoracion%20texto.png?raw=true" class="decoracion_texto_1">' +
-                    '<p>' + 'Con la visualización del video ya tienes más conocimientos acerca de las proteínas, que te parece si conocemos las propiedades de algunos de ellos!!' + '</p>' +
+                    '<p>' + 'Con la visualización del video ya tienes más conocimientos acerca de los carbohidratos, que te parece si conocemos las propiedades de algunos de ellos!!' + '</p>' +
                     '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/decoracion%20texto%202.png?raw=true" class="decoracion_texto_2">' +
                 '</div>' +
             '</div>' +
             '<div class="seccion_2">' +
-                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/naranja%20proteina.png?raw=true" class="imagen">' +
+                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/naranja%20carbohidratos.png?raw=true" class="imagen">' +
                 '<div class="titulos_proteina">' + 
                     '<h2 class="titulo_01">' + 'Conoce' + '</h2>' +
                     '<h2 class="titulo_02">' + 'Alimentos' +' </h2>' +
                     '<h2 class="titulo_03">' + 'Ricos en' + '</h2>' +
-                    '<h2 class="titulo_04">' + 'Proteínas' + '</h2>' +
+                    '<h2 class="titulo_04">' + 'Carbohidratos' + '</h2>' +
                 '</div>' +
                 '<div class="alimentos_proteinas">' + 
                     '<div class="caja_salmon">' + 
-                        '<p>' + 'Salmón' + '</p>' +
-                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/Salm%C3%B3n.png?raw=true">' +
+                        '<p>' + 'Pera' + '</p>' +
+                        '<img src="">' +
                     '</div>' +
                     '<div class="caja_soja">' + 
-                        '<p>' + 'Soja' + '</p>' +
-                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/Soja.png?raw=true">' +
+                        '<p>' + 'Piña' + '</p>' +
+                        '<img src="">' +
                     '</div>' +
                     '<div class="caja_jamon">' + 
-                        '<p>' + 'Jamón de Pavo' + '</p>' +
-                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/Jam%C3%B3n%20de%20Pavo.png?raw=true">' +
+                        '<p>' + 'Garbanzo' + '</p>' +
+                        '<img src="">' +
                     '</div>' +
                     '<div class="caja_lomo">' + 
-                        '<p>' + 'Lomo de cerdo' + '</p>' +
-                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/Lomo%20de%20Cerdo.png?raw=true">' +
+                        '<p>' + 'Fresas' + '</p>' +
+                        '<img src="">' +
                     '</div>' +
                     '<div class="caja_filete">' + 
-                        '<p>' + 'Ternera Filete' + '</p>' +
-                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/Terna%20Filete.png?raw=true">' +
+                        '<p>' + 'Uva' + '</p>' +
+                        '<img src="">' +
                     '</div>' +
                     '<div class="caja_pierna">' + 
-                        '<p>' + 'Pierna de Cerdo' + '</p>' +
-                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/Pierna%20de%20Cerdo.png?raw=true">' +
+                        '<p>' + 'Kiwi' + '</p>' +
+                        '<img src="">' +
                     '</div>' +
                 '</div>' +
                 '<div>' + 
@@ -98,7 +98,7 @@ export function pagina_proteina(){
                 '</div>' +
             '</div>' +
         '</div>';
-    let caja_proteina = document.querySelector("#caja_proteina");
+    let caja_proteina = document.querySelector("#caja_carbohidratos");
 
     caja_proteina.innerHTML = menu + contenedor_proteina;
     let desplegable = document.querySelector("#menu_desplegable");
