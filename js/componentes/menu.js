@@ -6,7 +6,7 @@ export let menu =
             '<div id="menu" class="menu">' + 
             '<div class="menu_compu">' + 
                 '<a href="./proteina.html">' + 'Proteínas' + '</a>' +
-                '<a>' + 'Carbohidratos' + '</a>' +
+                '<a href="./carbohidratos.html">' + 'Carbohidratos' + '</a>' +
                 '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu%20compu.png?raw=true">' +
                 '<a>' + 'Lípidos' + '</a>' +
                 '<a>' + 'Vitaminas' + '</a>' +
@@ -25,7 +25,7 @@ export let menu =
                             '<a href="./proteina.html">' + 'Proteínas' + '</a>' +
                         '</div>' +
                         '<div id="boton_carbohidratos">' + 
-                            '<a>' + 'Carbohidratos' + '</a>' +
+                            '<a href="./carbohidratos.html">' + 'Carbohidratos' + '</a>' +
                         '</div>' +
                         '<div id="boton_lipidos">' + 
                             '<a>' + 'Lípidos' + '</a>' +
