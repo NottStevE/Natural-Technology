@@ -1,3 +1,5 @@
+import { insertar_piramide } from "./piramide.js";
+
 export function estadistica(){
     function insertar_plato(){
         let plato = 
@@ -81,7 +83,7 @@ export function estadistica(){
                 '</div>' +
             '</div>'
         ;
-        caja_2.innerHTML = plato;
+        caja_2.innerHTML = plato + insertar_piramide;
     }
     boton_saltar.addEventListener('click', insertar_plato);
     boton_vamos.addEventListener('click', insertar_plato);
