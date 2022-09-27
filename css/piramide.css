@@ -77,6 +77,112 @@
     font-size: var(--tamañoTexto);
     text-align: justify;
 }
+.caja_equipo{
+    width: 100%;
+    height: auto;
+    margin: 6.9rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulos_equipo{
+    width: 100%;
+    height: 10.5rem;
+    position: relative;
+    margin: 0.4rem 0 0 0;
+}
+.titulos_equipo h2{
+    position: absolute;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 5rem;
+}
+.titulo1{
+    color: var(--colorVerdeOscuro);
+    top: 0;
+    left: 4.7rem;
+}
+.titulo2{
+    color: var(--colorNaranjaOscuro);
+    top: 4.4rem;
+    left: 12.8rem;
+}
+.caja_info_equipo{
+    width: 100%;
+    height: auto;
+    padding: 2.5rem;
+    margin: 2.3rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.caja_biologos, .caja_diseñadores, .caja_programadores{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 5.5rem 0;
+}
+.caja_info_equipo img{
+    width: 15.2rem;
+    height: 15.5rem;
+}
+.caja_info_equipo h2{
+    font-family: 'Fredoka', sans-serif;
+    color: var(--colorVerdeOscuro);
+    margin: 0 0 1rem 0;
+    font-size: var(--tamañoParrafo);
+}
+.biologos_texto, .programadores_texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 1.5rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.diseñadores_texto{
+    padding: 0 1.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.programadores_texto h2{
+    font-size: 2.5rem;
+}
+.caja_mas_info_equipo{
+    width: 27.7rem;
+    height: 12.5rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2rem;
+    background-color: var(--colorVerdeOscuro);
+    margin: 6.2rem 0 9.7rem 0;
+}
+.caja_mas_info_equipo div{
+    width: 5.1rem;
+    height: 4.7rem;
+    background-color: var(--colorNaranja);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -2.5rem;
+}
+.decoracion_equipo{
+    width: 100%;
+}
+.caja_mas_info_equipo div img{
+    width: 3rem;
+    height: 3rem;
+}
 @media screen and (min-width: 1366px){
     .caja_titulo_piramide{
         height: 40.4rem;
@@ -130,5 +236,59 @@
     .texto_piramide{
         width: 100%;
         font-size: 4.5rem;
+    }
+    .titulos_equipo{
+        margin: 7.1rem 0 0 0;
+        height: 28.1rem;
+    }
+    .titulos_equipo h2{
+        font-size: 15rem;
+    }
+    .titulo1{
+        left: 25rem;
+    }
+    .titulo2{
+        left: 50rem;
+        top: 14.6rem;
+    }
+    .caja_info_equipo img{
+        width: 50.5rem;
+        height: 44.5rem;
+    }
+    .caja_info_equipo{
+        margin-top: 15.3rem;
+        padding: 7rem;
+    }
+    .caja_info_equipo h2{
+        font-size: 10rem;
+        margin: 0 0 4.1rem 0;
+    }
+    .caja_info_equipo p{
+        font-size: 4rem;
+    }
+    .biologos_texto, .programadores_texto{
+        padding: 0 0 0 5rem;
+        margin: 0 0 16.1rem 0;
+    }
+    .diseñadores_texto{
+        padding: 0 5rem 0 0;
+        margin: 0 0 16.1rem 0;
+    }
+    .caja_mas_info_equipo{
+        width: 112.8rem;
+        height: 53.4rem;
+        margin: 0 0 53rem 0;
+    }
+    .caja_mas_info_equipo h2{
+        font-size: 15rem;
+    }
+    .caja_mas_info_equipo div{
+        width: 24.2rem;
+        height: 23.7rem;
+        bottom: -12rem;
+    }
+    .caja_mas_info_equipo div img{
+        width: 12.8rem;
+        height: 12.8rem;
     }
 }
