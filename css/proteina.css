@@ -22,7 +22,6 @@
     left: 0;
 }
 .contenedor_proteina{
-    margin: 36.8rem 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -328,5 +327,8 @@
     .caja_lomo img{
         width: 22.3rem;
         height: 16.7rem;
+    }
+    .contenedor_proteina{
+        margin: 36.5rem 0 0 0;
     }
 }
