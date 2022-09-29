@@ -1,3 +1,5 @@
+import { proteina_DATA } from "./DATA/proteina_DATA.js";
+
 export let menu = 
     '<div class="contenedor" id="contenedor">' +
         '<div class="fondo">' + 
@@ -35,7 +37,7 @@ export let menu =
                 '</div>' +
             '</div>' +
             '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu.png?raw=true" class="logo_menu">' +
-            '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/titulo%20proteina%20compu.png?raw=true" class="titulo_proteinas">'
+            '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/titulo%20proteina%20compu.png?raw=true" class="titulo_proteinas">' +
         '</div>' +
     '</div>'
 ;
@@ -60,41 +62,18 @@ export function pagina_proteina(){
                 '</div>' +
             '</div>' +
             '<div class="seccion_2">' +
-                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/naranja%20proteina.png?raw=true" class="imagen">' +
+                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/personaje%20proteinas%20lipido.png?raw=true" class="imagen">' +
                 '<div class="titulos_proteina">' + 
                     '<h2 class="titulo_01">' + 'Conoce' + '</h2>' +
                     '<h2 class="titulo_02">' + 'Alimentos' +' </h2>' +
                     '<h2 class="titulo_03">' + 'Ricos en' + '</h2>' +
                     '<h2 class="titulo_04">' + 'Proteínas' + '</h2>' +
                 '</div>' +
-                '<div class="alimentos_proteinas">' + 
-                    '<div class="caja_salmon">' + 
-                        '<p>' + 'Salmón' + '</p>' +
-                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/Salm%C3%B3n.png?raw=true">' +
-                    '</div>' +
-                    '<div class="caja_soja">' + 
-                        '<p>' + 'Soja' + '</p>' +
-                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/Soja.png?raw=true">' +
-                    '</div>' +
-                    '<div class="caja_jamon">' + 
-                        '<p>' + 'Jamón de Pavo' + '</p>' +
-                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/Jam%C3%B3n%20de%20Pavo.png?raw=true">' +
-                    '</div>' +
-                    '<div class="caja_lomo">' + 
-                        '<p>' + 'Lomo de cerdo' + '</p>' +
-                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/Lomo%20de%20Cerdo.png?raw=true">' +
-                    '</div>' +
-                    '<div class="caja_filete">' + 
-                        '<p>' + 'Ternera Filete' + '</p>' +
-                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/Terna%20Filete.png?raw=true">' +
-                    '</div>' +
-                    '<div class="caja_pierna">' + 
-                        '<p>' + 'Pierna de Cerdo' + '</p>' +
-                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/Pierna%20de%20Cerdo.png?raw=true">' +
-                    '</div>' +
+                '<div id="contenedor_alimentos">' + 
+                
                 '</div>' +
                 '<div>' + 
-                    '<img src="" class="decoa">'
+                    '<img src="" class="titulo_propiedades">'
                 '</div>' +
             '</div>' +
         '</div>';
@@ -107,5 +86,22 @@ export function pagina_proteina(){
         desplegable.classList.remove("desactivar");
     }
     boton_desplegable.addEventListener('click', menu_desplegable);
+
+    let alimentos_proteinas = ['Salmón', 'Soja', 'Jamón de Pavo', 'Lomo de cerdo', 'Ternera Filete', 'Pierna de cerdo', 'Atún', 'Huevos'];
+    let contenedor_alimentos = document.querySelector("#contenedor_alimentos");
+
+
+    function agregar_alimentos(){
+        alimentos_proteinas.forEach(function(element, index){
+            let contenedor = document.createElement("div");
+            contenedor.innerHTML = 
+                '<p>' + element + '</p>' +
+                '<img src="' + proteina_DATA[index].alimentos_imagenes + '">'
+            ;
+    
+            contenedor_alimentos.appendChild(contenedor);
+        });
+    }
+    agregar_alimentos();
 }
 pagina_proteina();
