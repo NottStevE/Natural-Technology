@@ -7,7 +7,7 @@
 }
 .seccion_1{
     width: 31.7rem;
-    margin: 40rem 0 0 0;
+    margin: 60rem 0 0 0;
     height: auto;
     display: flex;
     justify-content: center;
@@ -16,13 +16,12 @@
 }
 .titulo_proteinas{
     width: 37.5rem;
-    height: 20.7rem;
+    height: auto;
     position: absolute;
     bottom: -140px;
     left: 0;
 }
 .contenedor_proteina{
-    margin: 36.8rem 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,9 +144,9 @@
     color: var(--colorNaranjaOscuro);
     margin: 13.5rem 0 0 8rem;
 }
-.alimentos_proteinas{
+#contenedor_alimentos{
     width: 31.8rem;
-    height: 49.8rem;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -155,7 +154,7 @@
     padding-bottom: 2.5rem;
     border-bottom: 2px solid #EEEEEE;
 }
-.alimentos_proteinas div{
+#contenedor_alimentos div{
     width: 14.9rem;
     height: 13.3rem;
     margin: 0 0 3.3rem 0;
@@ -171,73 +170,34 @@
     align-items: center;
     justify-content: center;
     position: relative;
-}
-.caja_salmon, .caja_filete{
     background-color: var(--colorVerde);
 }
-.caja_soja, .caja_pierna{
-    background-color: #F8931F;
-}
-.caja_jamon{
-    background-color: var(--colorNaranjaOscuro);
-}
-.caja_jamon img{
-    width: 12.3rem;
-    height: 7.8rem;
-    position: absolute;
-    bottom: 0;
-}
-.caja_salmon img{
-    width: 12.4rem;
-    height: 10.3rem;
-    position: absolute;
-    bottom: -1rem;
-}
-.alimentos_proteinas div p{
+#contenedor_alimentos div p{
     position: absolute;
     top: 1rem;
 }
-.caja_soja img{
-    width: 15rem;
-    height: 8.6rem;
-    position: absolute;
-    bottom: 0;
-    right: 0.9rem;
-}
-.caja_lomo{
-    background-color: var(--colorVerdeOscuro);
-}
-.caja_lomo img{
-    width: 9.6rem;
-    height: 7.2rem;
+#contenedor_alimentos div img{
+    width: 7rem;
+    height: 7rem;
     position: absolute;
     bottom: 0;
 }
-.caja_filete img{
-    width: 13.9rem;
-    height: 7.5rem;
-    position: absolute;
-    bottom: -0.5rem;
-    left: 2rem;
-}
-.caja_pierna img{
-    width: 9rem;
-    height: 6.9rem;
-    position: absolute;
-    bottom: -0.5rem;
+.imagen{
+    width: 45rem;
+    height: auto;
 }
 @media screen and (min-width: 1366px){
     .titulo_proteinas{
         width: 133.6rem;
-        height: 59.8rem;
         margin-top: 20rem;
         bottom: -50rem;
     }
     .seccion_1{
         width: 122.8rem;
         height: auto;
-        border: none;
         align-items: center;
+        padding-bottom: 4rem;
+        margin: 90rem 0 0 0;
     }
     .personaje_naranja{
         width: 30.7rem;
@@ -274,59 +234,51 @@
         top: -2rem;
     }
     .titulos_proteina{
-        width: 70rem;
+        width: 133.3rem;
+        height: 29.2rem;
     }
     .titulos_proteina h2{
-        font-size: 10rem;
+        font-size: 15rem;
+        margin: 0;
+    }
+    .titulo_01{
+        top: 0;
+        left: 5rem;
     }
     .titulo_02{
-        margin-top: 9rem;
+        top: 0;
+        right: 5rem;
     }
     .titulo_03{
-        margin-top: 18rem;
+        top: 14.6rem;
+        left: 5rem;
     }
     .titulo_04{
-        margin-top: 27rem;
+        top: 14.6rem;
+        right: 5rem;
     }
     .imagen{
-        display: none;
+        width: 114.9rem;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 6.9rem;
     }
-    .alimentos_proteinas{
+    #contenedor_alimentos{
         width: 122rem;
-        height: 71.9rem;
-        margin-top: 27rem;
+        height: auto;
+        margin-top: 6.9rem;
     }
-    .alimentos_proteinas div{
+    #contenedor_alimentos div{
         width: 37rem;
         height: 33rem;
         margin: 0 0 6.9rem 0;
     }
-    .alimentos_proteinas div p{
+    #contenedor_alimentos div p{
         font-size: 5rem;
         top: 3rem;
     }
-    .caja_salmon img{
-        width: 30.6rem;
-        height: 25.4rem;
-    }
-    .caja_soja img{
-        width: 36.9rem;
-        height: 21.2rem;
-    }
-    .caja_jamon img{
-        width: 30.4rem;
-        height: 19.2rem;
-    }
-    .caja_filete img{
-        width: 34.6rem;
-        height: 19.7rem;
-    }
-    .caja_pierna img{
-        width: 27.8rem;
-        height: 23rem;
-    }
-    .caja_lomo img{
-        width: 22.3rem;
-        height: 16.7rem;
+    #contenedor_alimentos div img{
+        width: 25rem;
+        height: 25rem;
     }
 }
