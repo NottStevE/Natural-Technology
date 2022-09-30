@@ -79,8 +79,8 @@ export let insertar_piramide =
                 'Sobre Nosotros' +
             '</h2>' +
             '<div>' + 
-                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/mas%201.png?raw=true">'
-            '</div>'
+                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/mas%201.png?raw=true">' +
+            '</div>' +
         '</div>' +
     '</div>' 
 ;
