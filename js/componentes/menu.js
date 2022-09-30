@@ -1,4 +1,5 @@
 import { estadistica } from "./estadistica.js";
+import { buscador_DATA } from "./DATA/buscador_DATA.js";
 
 export let menu = 
     '<div class="contenedor desactivar" id="contenedor">' +
@@ -37,6 +38,14 @@ export let menu =
                 '</div>' +
             '</div>' +
             '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu.png?raw=true" class="logo_menu">' +
+            '<div class="caja_buscador">' + 
+                '<input type="text" id="buscador" placeholder="Busca tu alimento favorito 🔍︎">' +
+                '<div class="separacion">' + 
+                    '<div id="caja_resultados">' + 
+                    
+                    '</div>' +
+                '</div>' +
+            '</div>' +
             '<div class="titulos">' +
                 '<h2 class="titulo_1">' + 'MIDE TUS' + '</h2>' +
                 '<h2 class="titulo_2">' + 'PORCIONES' + '</h2>' +
@@ -56,7 +65,7 @@ export function insertar_menu(){
         contenedor_menu.classList.remove("desactivar");
         contenedor_comienzo.classList.add("desactivar");
         contenedor_opciones.classList.add("desactivar");
-        contenedor_comienzo_2.classList.add("desactivar");
+        
         estadistica();
     }
     boton_saltar.addEventListener('click', saltar);
@@ -68,4 +77,46 @@ export function insertar_menu(){
         desplegable.classList.remove("desactivar");
     }
     boton_desplegable.addEventListener('click', menu_desplegable);
+
+    //BUSCADOR
+
+    let alimentos_buscador = ['Aceitunas', 'Aguacate', 'Almendras', 'Atún', 'Aceite de Coco', 'Aceite de Oliva', 'Banana', 'Chorizo', 'Costilla de Cerdo', 'Cangrejo', 'Espinaca', 'Fresa', 'Garbanzo', 'Guisantes', 'Huevo', 'Huevo', 'Hígado', 'Jamón de Pavo', 'Kiwi', 'Leche', 'Limón', 'Linaza', 'Lomo de cerdo', 'Mango', 'Melón', 'Mantequilla de Maní', 'Naranja', 'Pera', 'Piña', 'Pierna de Cerdo', 'Remolacha', 'Salchicha', 'Salmón', 'Soja', 'Ternera Filete', 'Uva', 'Yogurt', 'Zanahoria']
+    let caja_resultados = document.querySelector("#caja_resultados");
+    let resultado_busqueda = document.querySelector("#resultado_busqueda");
+
+    function agregar_resultados(){
+        alimentos_buscador.forEach(function(element, index){
+            let caja_alimento = document.createElement("div");
+            caja_alimento.classList.add("alimento");
+            caja_alimento.innerHTML = 
+                '<div class="icono">' + 
+                    '<img src="'+ buscador_DATA[index].imagen +'">' +
+                '</div>' +
+                '<p class="nombre_fruta">' + element + '</p>' +
+                '<p class="tipo">' + buscador_DATA[index].tipo + '</p>'
+            ;
+            caja_resultados.appendChild(caja_alimento);
+            caja_alimento.classList.add("filtro");
+        });
+        caja_resultados.addEventListener('click', (e) => {
+            console.log(e.target);
+        });
+    }
+    agregar_resultados();
+    document.addEventListener("keyup", e=>{
+        if(e.target.matches("#buscador")){
+            document.querySelectorAll(".alimento").forEach(articulo => {
+                articulo.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+                ?articulo.classList.remove("filtro")
+                :articulo.classList.add("filtro")
+            })
+        }
+        if(e.target.value == ""){
+            document.querySelectorAll(".alimento").forEach(articulo => {
+                articulo.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+                ?articulo.classList.add("filtro")
+                :articulo.classList.add("filtro")
+            })
+        }
+    })
 }
