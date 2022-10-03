@@ -44,6 +44,9 @@ export let menu =
                     '<div id="caja_resultados">' + 
                     
                     '</div>' +
+                    '<div id="resultado_busqueda">' + 
+                    
+                    '</div>' +
                 '</div>' +
             '</div>' +
             '<div class="titulos">' +
@@ -99,7 +102,7 @@ export function insertar_menu(){
             caja_alimento.classList.add("filtro");
         });
         caja_resultados.addEventListener('click', (e) => {
-            console.log(e.target);
+            console.log(e.textContent)
         });
     }
     agregar_resultados();
@@ -118,5 +121,5 @@ export function insertar_menu(){
                 :articulo.classList.add("filtro")
             })
         }
-    })
+    });
 }

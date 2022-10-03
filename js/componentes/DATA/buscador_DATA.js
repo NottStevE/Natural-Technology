@@ -2,7 +2,8 @@ export let buscador_DATA = [
     {
         tipo: 'Lípidos',
         imagen: '',
-        imagen_resultado: ''
+        imagen_resultado: '',
+        fruta: 'aceitunas'
     },
     {
         tipo: 'Lípidos',

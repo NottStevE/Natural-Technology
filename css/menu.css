@@ -168,6 +168,7 @@
     flex-direction: row;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 .nombre_fruta{
     color: #000000;
