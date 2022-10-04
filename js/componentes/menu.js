@@ -45,7 +45,7 @@ export let menu =
                     
                     '</div>' +
                     '<div id="resultado_busqueda">' + 
-                    
+                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/CLOSE.png?raw=true" id="cerrar_resultados">' +
                     '</div>' +
                 '</div>' +
             '</div>' +
@@ -100,10 +100,15 @@ export function insertar_menu(){
             ;
             caja_resultados.appendChild(caja_alimento);
             caja_alimento.classList.add("filtro");
+
+            function agregar_info_producto(){
+                //resultado_busqueda.innerHTML += buscador_DATA[index].fruta;
+                resultado_busqueda.classList.remove("filtro")
+            }
+            caja_alimento.addEventListener('click', agregar_info_producto);
         });
-        caja_resultados.addEventListener('click', (e) => {
-            console.log(e.textContent)
-        });
+        caja_resultados.classList.add("filtro");
+        resultado_busqueda.classList.add("filtro")
     }
     agregar_resultados();
     document.addEventListener("keyup", e=>{
@@ -121,5 +126,24 @@ export function insertar_menu(){
                 :articulo.classList.add("filtro")
             })
         }
+        if(e.target.matches("#buscador")){
+            document.querySelectorAll(".alimento").forEach(articulo => {
+                articulo.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+                ?caja_resultados.classList.remove("filtro")
+                :caja_resultados.classList.remove("filtro")
+            })
+        }
+        if(e.target.value == ""){
+            document.querySelectorAll(".alimento").forEach(articulo => {
+                articulo.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+                ?caja_resultados.classList.add("filtro")
+                :caja_resultados.classList.add("filtro")
+            })
+        }
     });
+    let cerrar_resultados = document.querySelector("#cerrar_resultados");
+    cerrar_resultados.addEventListener('click', () => {
+        resultado_busqueda.classList.add("filtro");
+        console.log('si funciona lol');
+    })
 }
