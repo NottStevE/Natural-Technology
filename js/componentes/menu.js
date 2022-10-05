@@ -9,8 +9,8 @@ export let menu =
                 '<a href="./proteina.html">' + 'Proteínas' + '</a>' +
                 '<a href="./carbohidratos.html">' + 'Carbohidratos' + '</a>' +
                 '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu%20compu.png?raw=true">' +
-                '<a>' + 'Lípidos' + '</a>' +
-                '<a>' + 'Vitaminas' + '</a>' +
+                '<a href="./lipidos.html">' + 'Lípidos' + '</a>' +
+                '<a href="./vitaminas.html">' + 'Vitaminas' + '</a>' +
             '</div>' +
                 '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/icono%20menu.png?raw=true" id="boton_menu_desplegable">' + 
                 '<div class="fondo_menu desactivar" id="menu_desplegable">' + 
@@ -20,7 +20,7 @@ export let menu =
                             '<a href="./index.html">' + 'Bienvenida' + '</a>' +
                         '</div>' +
                         '<div id="boton_home" class="menu_decoracion">' + 
-                            '<p>' + 'Home' + '</p>' +
+                            '<p href="./index.html">' + 'Home' + '</p>' +
                         '</div>' +
                         '<div id="boton_proteinas">' + 
                             '<a href="./proteina.html">' + 'Proteínas' + '</a>' +
@@ -29,10 +29,10 @@ export let menu =
                             '<a href="./carbohidratos.html">' + 'Carbohidratos' + '</a>' +
                         '</div>' +
                         '<div id="boton_lipidos">' + 
-                            '<a>' + 'Lípidos' + '</a>' +
+                            '<a href="./lipidos.html">' + 'Lípidos' + '</a>' +
                         '</div>' +
                         '<div id="boton_vitaminas">' + 
-                            '<a>' + 'Vitaminas' + '</a>' +
+                            '<a href="./vitaminas.html">' + 'Vitaminas' + '</a>' +
                         '</div>' +
                     '</div>' +
                 '</div>' +
@@ -55,47 +55,6 @@ export let menu =
                 '<h2 class="titulo_3">' + 'Y CREA UN' + '</h2>' +
                 '<h2 class="titulo_4">' + 'PLATO ¡SALUDABLE!' + '</h2>' +
             '</div>' +
-        '</div>' +
-    '</div>'
-;
-export let menu_alimentos = 
-    '<div class="contenedor" id="contenedor">' +
-        '<div class="fondo">' + 
-            '<div id="menu" class="menu">' + 
-            '<div class="menu_compu">' + 
-                '<a href="./proteina.html">' + 'Proteínas' + '</a>' +
-                '<a href="./carbohidratos.html">' + 'Carbohidratos' + '</a>' +
-                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu%20compu.png?raw=true">' +
-                '<a href="./lipidos.html">' + 'Lípidos' + '</a>' +
-                '<a href="./vitaminas.html">' + 'Vitaminas' + '</a>' +
-            '</div>' +
-                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/icono%20menu.png?raw=true" id="boton_menu_desplegable">' + 
-                '<div class="fondo_menu desactivar" id="menu_desplegable">' + 
-                    '<div class="menu_desplegable">' + 
-                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu%20desplegable.png?raw=true">' +
-                        '<div id="boton_bienvenida">' + 
-                            '<a href="./index.html">' + 'Bienvenida' + '</a>' +
-                        '</div>' +
-                        '<div id="boton_home" class="menu_decoracion">' + 
-                            '<p>' + 'Home' + '</p>' +
-                        '</div>' +
-                        '<div id="boton_proteinas">' + 
-                            '<a href="./proteina.html">' + 'Proteínas' + '</a>' +
-                        '</div>' +
-                        '<div id="boton_carbohidratos">' + 
-                            '<a href="./carbohidratos.html">' + 'Carbohidratos' + '</a>' +
-                        '</div>' +
-                        '<div id="boton_lipidos">' + 
-                            '<a href="./lipidos.html">' + 'Lípidos' + '</a>' +
-                        '</div>' +
-                        '<div id="boton_vitaminas">' + 
-                            '<a href="./vitaminas.html">' + 'Vitaminas' + '</a>' +
-                        '</div>' +
-                    '</div>' +
-                '</div>' +
-            '</div>' +
-            '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu.png?raw=true" class="logo_menu">' +
-            '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/titulo%20proteina%20compu.png?raw=true" class="titulo_proteinas">' +
         '</div>' +
     '</div>'
 ;
@@ -185,6 +144,5 @@ export function insertar_menu(){
     let cerrar_resultados = document.querySelector("#cerrar_resultados");
     cerrar_resultados.addEventListener('click', () => {
         resultado_busqueda.classList.add("filtro");
-        console.log('si funciona lol');
     })
 }
