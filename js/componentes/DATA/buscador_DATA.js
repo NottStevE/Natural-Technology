@@ -5,13 +5,17 @@ export let buscador_DATA = [
     {
         tipo: 'Lípidos',
         imagen: 'https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/buscador/A/Aceitunas.png?raw=true',
-        imagen_resultado: '',
-        fruta: 'aceitunas'
+        imagen_resultado: 'https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/L%C3%8DPIDOS/Aceitunas.png?raw=true',
+        fruta: 'ACEITUNAS',
+        kcal: '0.056',
+        cal: '56',
+        estadistica: 'https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/buscador/estadistica/a/aceitunas.png?raw=true',
+        porcentaje: 'https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/buscador/porcentajes/aceitunas.png?raw=true'
     },
     {
         tipo: 'Lípidos',
         imagen: 'https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/buscador/A/Aguacate.png?raw=true',
-        fruta: 'aguacate'
+        fruta: 'AGUACATE'
     },
     {
         tipo: 'Carbohidratos',
