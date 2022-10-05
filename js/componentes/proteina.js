@@ -76,7 +76,8 @@ export function pagina_proteina(){
                     '<img src="" class="titulo_propiedades">'
                 '</div>' +
             '</div>' +
-        '</div>';
+        '</div>'
+        ;
     let caja_proteina = document.querySelector("#caja_proteina");
 
     caja_proteina.innerHTML = menu + contenedor_proteina;

@@ -58,6 +58,47 @@ export let menu =
         '</div>' +
     '</div>'
 ;
+export let menu_alimentos = 
+    '<div class="contenedor" id="contenedor">' +
+        '<div class="fondo">' + 
+            '<div id="menu" class="menu">' + 
+            '<div class="menu_compu">' + 
+                '<a href="./proteina.html">' + 'Proteínas' + '</a>' +
+                '<a href="./carbohidratos.html">' + 'Carbohidratos' + '</a>' +
+                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu%20compu.png?raw=true">' +
+                '<a href="./lipidos.html">' + 'Lípidos' + '</a>' +
+                '<a href="./vitaminas.html">' + 'Vitaminas' + '</a>' +
+            '</div>' +
+                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/icono%20menu.png?raw=true" id="boton_menu_desplegable">' + 
+                '<div class="fondo_menu desactivar" id="menu_desplegable">' + 
+                    '<div class="menu_desplegable">' + 
+                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu%20desplegable.png?raw=true">' +
+                        '<div id="boton_bienvenida">' + 
+                            '<a href="./index.html">' + 'Bienvenida' + '</a>' +
+                        '</div>' +
+                        '<div id="boton_home" class="menu_decoracion">' + 
+                            '<p>' + 'Home' + '</p>' +
+                        '</div>' +
+                        '<div id="boton_proteinas">' + 
+                            '<a href="./proteina.html">' + 'Proteínas' + '</a>' +
+                        '</div>' +
+                        '<div id="boton_carbohidratos">' + 
+                            '<a href="./carbohidratos.html">' + 'Carbohidratos' + '</a>' +
+                        '</div>' +
+                        '<div id="boton_lipidos">' + 
+                            '<a href="./lipidos.html">' + 'Lípidos' + '</a>' +
+                        '</div>' +
+                        '<div id="boton_vitaminas">' + 
+                            '<a href="./vitaminas.html">' + 'Vitaminas' + '</a>' +
+                        '</div>' +
+                    '</div>' +
+                '</div>' +
+            '</div>' +
+            '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu.png?raw=true" class="logo_menu">' +
+            '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/titulo%20proteina%20compu.png?raw=true" class="titulo_proteinas">' +
+        '</div>' +
+    '</div>'
+;
 export function insertar_menu(){
     function saltar(){
         let contenedor_menu = document.querySelector("#contenedor");
