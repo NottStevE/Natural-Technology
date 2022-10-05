@@ -8,8 +8,8 @@ export let menu =
                 '<a href="./proteina.html">' + 'Proteínas' + '</a>' +
                 '<a href="./carbohidratos.html">' + 'Carbohidratos' + '</a>' +
                 '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu%20compu.png?raw=true">' +
-                '<a>' + 'Lípidos' + '</a>' +
-                '<a>' + 'Vitaminas' + '</a>' +
+                '<a href="./lipidos.html">' + 'Lípidos' + '</a>' +
+                '<a href="./vitaminas.html">' + 'Vitaminas' + '</a>' +
             '</div>' +
                 '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/icono%20menu.png?raw=true" id="boton_menu_desplegable">' + 
                 '<div class="fondo_menu desactivar" id="menu_desplegable">' + 
@@ -19,7 +19,7 @@ export let menu =
                             '<a href="./index.html">' + 'Bienvenida' + '</a>' +
                         '</div>' +
                         '<div id="boton_home" class="menu_decoracion">' + 
-                            '<p>' + 'Home' + '</p>' +
+                            '<p href="./index.html">' + 'Home' + '</p>' +
                         '</div>' +
                         '<div id="boton_proteinas">' + 
                             '<a href="./proteina.html">' + 'Proteínas' + '</a>' +
@@ -28,10 +28,10 @@ export let menu =
                             '<a href="./carbohidratos.html">' + 'Carbohidratos' + '</a>' +
                         '</div>' +
                         '<div id="boton_lipidos">' + 
-                            '<a>' + 'Lípidos' + '</a>' +
+                            '<a href="./lipidos.html">' + 'Lípidos' + '</a>' +
                         '</div>' +
                         '<div id="boton_vitaminas">' + 
-                            '<a>' + 'Vitaminas' + '</a>' +
+                            '<a href="./vitaminas.html">' + 'Vitaminas' + '</a>' +
                         '</div>' +
                     '</div>' +
                 '</div>' +
