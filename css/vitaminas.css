@@ -1,0 +1,290 @@
+#caja_vitaminas{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.seccion_1{
+    width: 31.7rem;
+    margin: 60rem 0 0 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px solid #EEEEEE;
+}
+.titulo_proteinas{
+    width: 37.5rem;
+    height: auto;
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+}
+.contenedor_proteina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.personaje_naranja{
+    width: 11.8rem;
+    height: 10.3rem;
+}
+.contenedor_video{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caja_video{
+    width: 31.8rem;
+    height: 27.8rem;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.9rem 2.1rem 2rem 2rem;
+}
+.caja_video iframe{
+    width: 27.7rem;
+    height: 16.6rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.25);
+}
+.caja_video div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 2.7rem 0 0 0;
+}
+.caja_video p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+    color: #274215;
+}
+.caja_video h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: #DD7236;
+}
+.caja_texto_proteina{
+    width: 100%;
+    height: 35.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.caja_texto_proteina p{
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: justify;
+    width: 29.6rem;
+    height: auto;
+    font-family: 'Montserrat';
+}
+.caja_texto_proteina img{
+    width: 5.5rem;
+    height: 6.5rem;
+    position: absolute;
+}
+.decoracion_texto_1{
+    top: 4rem;
+    left: -3.2rem;
+}
+.decoracion_texto_2{
+    bottom: 3rem;
+    right: 5rem;
+}
+.seccion_2{
+    width: 37.5rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6.9rem 0 0 0;
+}
+footer{
+    width: 37.5rem;
+}
+.titulos_proteina{
+    width: 100%;
+    height: 20.4rem;
+    margin: 3rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.titulos_proteina h2{
+    font-size: 5rem;
+    font-family: 'Fredoka';
+    position: absolute;
+}
+.titulo_01{
+    color: var(--colorVerdeOscuro);
+    margin: 0 0 0 3.5rem;
+}
+.titulo_02{
+    color: var(--colorNaranja);
+    margin: 4.5rem 0 0 9rem;
+}
+.titulo_03{
+    color: var(--colorVerdeOscuro);
+    margin: 9rem 0 0 6rem;
+}
+.titulo_04{
+    color: var(--colorNaranjaOscuro);
+    margin: 13.5rem 0 0 9rem;
+}
+#contenedor_alimentos{
+    width: 31.8rem;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2.1rem 0 0 0;
+    padding-bottom: 2.5rem;
+    border-bottom: 2px solid #EEEEEE;
+}
+#contenedor_alimentos div{
+    width: 14.9rem;
+    height: 13.3rem;
+    margin: 0 0 3.3rem 0;
+    border-radius: 1.2rem;
+    color: white;
+    font-family: 'Fredoka';
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--colorVerde);
+}
+#contenedor_alimentos div p{
+    position: absolute;
+    top: 1rem;
+}
+#contenedor_alimentos div img{
+    width: 8rem;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+.imagen{
+    width: 36rem;
+    height: auto;
+}
+@media screen and (min-width: 1366px){
+    .titulo_proteinas{
+        width: 133.6rem;
+        margin-top: 20rem;
+        bottom: -50rem;
+    }
+    .seccion_1{
+        width: 122.8rem;
+        height: auto;
+        align-items: center;
+        padding-bottom: 4rem;
+        margin: 90rem 0 0 0;
+    }
+    .personaje_naranja{
+        width: 30.7rem;
+        height: 26.8rem;
+    }
+    .caja_video{
+        width: 122.8rem;
+        height: 74rem;
+        padding: 8.7rem;
+    }
+    .caja_video iframe{
+        width: 105.3rem;
+        height: 54.3rem;
+        margin: 0 0 2.6rem 0;
+    }
+    .caja_video p{
+        font-size: 4rem;
+    }
+    .caja_video h2{
+        font-size: 4rem;
+    }
+    .caja_texto_proteina{
+        width: 97rem;
+        height: 28.4rem;
+        margin: 22.4rem 0 0 0;
+    }
+    .caja_texto_proteina p{
+        width: 97rem;
+        height: 28.4rem;
+        font-size: 4.5rem;
+    }
+    .decoracion_texto_1{
+        left: -5rem;
+        top: -2rem;
+    }
+    .titulos_proteina{
+        width: 133.3rem;
+        height: 29.2rem;
+    }
+    .titulos_proteina h2{
+        font-size: 15rem;
+        margin: 0;
+    }
+    .titulo_01{
+        top: 0;
+        left: 5rem;
+    }
+    .titulo_02{
+        top: 0;
+        right: 5rem;
+    }
+    .titulo_03{
+        top: 14.6rem;
+        left: 4rem;
+    }
+    .titulo_04{
+        top: 14.6rem;
+        right: 4rem;
+    }
+    .imagen{
+        width: 114.9rem;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 6.9rem;
+    }
+    #contenedor_alimentos{
+        width: 122rem;
+        height: auto;
+        margin-top: 6.9rem;
+    }
+    #contenedor_alimentos div{
+        width: 37rem;
+        height: 33rem;
+        margin: 0 0 6.9rem 0;
+    }
+    #contenedor_alimentos div p{
+        font-size: 5rem;
+        top: 3rem;
+    }
+    #contenedor_alimentos div img{
+        width: 25rem;
+        height: auto;
+    }
+    footer{
+        width: 1351px;
+    }
+}

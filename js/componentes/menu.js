@@ -46,6 +46,9 @@ export let menu =
                     '</div>' +
                     '<div id="resultado_busqueda">' + 
                         '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/CLOSE.png?raw=true" id="cerrar_resultados">' +
+                        '<div id="despliegue_informacion">' + 
+                            
+                        '</div>' +
                     '</div>' +
                 '</div>' +
             '</div>' +
@@ -86,6 +89,7 @@ export function insertar_menu(){
     let alimentos_buscador = ['Aceitunas', 'Aguacate', 'Almendras', 'Atún', 'Aceite de Coco', 'Aceite de Oliva', 'Banana', 'Chorizo', 'Costilla de Cerdo', 'Cangrejo', 'Espinaca', 'Fresa', 'Garbanzo', 'Guisantes', 'Huevo', 'Huevo', 'Hígado', 'Jamón de Pavo', 'Kiwi', 'Leche', 'Limón', 'Linaza', 'Lomo de cerdo', 'Mango', 'Melón', 'Mantequilla de Maní', 'Naranja', 'Pera', 'Piña', 'Pierna de Cerdo', 'Remolacha', 'Salchicha', 'Salmón', 'Soja', 'Ternera Filete', 'Uva', 'Yogurt', 'Zanahoria']
     let caja_resultados = document.querySelector("#caja_resultados");
     let resultado_busqueda = document.querySelector("#resultado_busqueda");
+    let despliegue_informacion = document.querySelector("#despliegue_informacion");
 
     function agregar_resultados(){
         alimentos_buscador.forEach(function(element, index){
@@ -102,7 +106,26 @@ export function insertar_menu(){
             caja_alimento.classList.add("filtro");
 
             function agregar_info_producto(){
-                //resultado_busqueda.innerHTML += buscador_DATA[index].fruta;
+                despliegue_informacion.innerHTML = 
+                    '<h2 class="titulo_fruta">' + element.toLocaleUpperCase() + '</h2>' +
+                    '<div class="info_calorias">' + 
+                        '<p class="info_1">' + buscador_DATA[index].kcal + '%Kcal' + '</p>' +
+                        '<p class="info_2">' + buscador_DATA[index].cal + '%cal' + '</p>' +
+                    '</div>' +
+                    '<div class="contenido_fruta">' + 
+                        '<img class="imagen_fruta" src="'+ buscador_DATA[index].imagen_resultado + '">' +
+                        '<img class="imagen_fruta" src="'+ buscador_DATA[index].estadistica + '">' +
+                        '<div class="porcentajes">' + 
+                            '<p class="tipo_alimento">' + buscador_DATA[index].tipo + '</p>' +
+                            '<img class="porcentaje" src="'+ buscador_DATA[index].porcentaje + '">' +
+                        '</div>' +
+                        '<div class="vitaminas_contenidas">' + 
+                            '<img class="personaje" src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/personaje%20naranja.png?raw=true">' +
+                            '<p>' + 'Vitaminas Contenidas' + '</p>' +
+                            '<img class="flecha" src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/flecha.png?raw=true">' +
+                        '</div>' +
+                    '</div>'
+                    ;
                 resultado_busqueda.classList.remove("filtro")
             }
             caja_alimento.addEventListener('click', agregar_info_producto);
