@@ -107,7 +107,7 @@ export function insertar_menu(){
 
             function agregar_info_producto(){
                 despliegue_informacion.innerHTML = 
-                    '<h2 class="titulo_fruta">' + buscador_DATA[index].fruta + '</h2>' +
+                    '<h2 class="titulo_fruta">' + element.toLocaleUpperCase() + '</h2>' +
                     '<div class="info_calorias">' + 
                         '<p class="info_1">' + buscador_DATA[index].kcal + '%Kcal' + '</p>' +
                         '<p class="info_2">' + buscador_DATA[index].cal + '%cal' + '</p>' +
