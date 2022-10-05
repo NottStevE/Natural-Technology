@@ -120,6 +120,204 @@
 .menu_compu{
     display: none;
 }
+.caja_buscador{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    position: relative;
+}
+.icono img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#buscador{
+    background: #F8931F;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    width: 19.8rem;
+    height: 2.4rem;
+    text-align: center;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+    color: #F5F5F5;
+    font-weight: 300;
+    letter-spacing: 0.155em;
+    font-family: 'Montserrat';
+    line-height: 11px;
+    margin-left: 8.9rem;
+}
+#buscador::placeholder{
+    font-family: 'Montserrat';
+    color: #F5F5F5;
+    font-weight: 200;
+    letter-spacing: 0.155em;
+    line-height: 11px;
+}
+#caja_resultados{
+    width: 19.8rem;
+    height: auto;
+    background-color: white;
+    border-radius: 1rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+    margin-left: 8.9rem;
+}
+.alimento{
+    width: 100%;
+    height: 3.8rem;
+    border-bottom: 1px solid #E6E1E1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.nombre_fruta{
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    left: 6.2rem;
+}
+.tipo{
+    font-size: 0.5rem;
+    color: #D0D0D0;
+    font-weight: 500;
+    position: absolute;
+    right: 1rem;
+}
+.icono{
+    width: 2.7rem;
+    height: 2.5rem;
+    background-color: #F8931F;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 2rem;
+}
+.separacion{
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+#resultado_busqueda{
+    width: 32.4rem;
+    height: auto;
+    background-color: #F8931F;
+    border-radius: 1rem;
+    margin-left: 2.55rem;
+    margin-top: 1rem;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+.filtro{
+    display: none;
+}
+.icono img{
+    width: 98%;
+    height: auto;
+    object-fit: cover;
+}
+#cerrar_resultados{
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+#despliegue_informacion{
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 2rem;
+}
+.titulo_fruta{
+    font-family: 'Fredoka', sans-serif;
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.info_calorias{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
+    font-weight: 700;
+}
+.info_1, .info_2{
+    padding: 3px 14px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+.info_1{
+    background-color: var(--colorVerde);
+}
+.info_2{
+    background-color: var(--colorNaranja);
+    margin: 0 0 0 2rem;
+}
+.contenido_fruta{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 0 0 0;
+}
+.imagen_fruta{
+    width: 14rem;
+    height: auto;
+}
+.porcentajes{
+    width: 13rem;
+    height: auto;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0 0 0;
+    object-fit: cover;
+}
+.porcentajes p{
+    margin-bottom: 0.5rem;
+}
+.porcentaje{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.vitaminas_contenidas{
+    width: 13rem;
+    height: 5rem;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0.5rem;
+    align-items: center;
+    box-shadow: 0px 1px 8px -1px rgba(112, 107, 107, 0.25);
+    color: var(--colorVerdeOscuro);
+    font-family: 'Fredoka';
+    font-weight: 700;
+    text-align: center;
+}
+.flecha{
+    width: 2.5rem;
+    height: auto;
+}
+.personaje{
+    width: 2.5rem;
+    height: auto;
+}
 @media screen and (min-width: 1366px){
     .contenedor{
         width: 100%;
@@ -162,10 +360,6 @@
     }
     .titulos{
         margin: 6.6rem 0 0 0;
-        position: relative;
-    }
-    .titulos h2{
-        position: absolute;
     }
     .titulo_1{
         font-size: 15rem;
@@ -174,16 +368,77 @@
     .titulo_2{
         font-size: 15rem;
         margin-left: 355px;
-        margin-top: 130px;
     }
     .titulo_3{
         font-size: 15rem;
         margin-left: 248px;
-        margin-top: 276px;
     }
     .titulo_4{
         font-size: 10rem;
         margin-left: 322px;
-        margin-top: 432px;
+    }
+    #buscador{
+        width: 48.5rem;
+        height: 6rem;
+        font-size: 2rem;
+        margin-left: 83.2rem;
+        border-radius: 5rem;
+    }
+    #buscador::placeholder{
+        font-size: 2rem;
+    }
+    #caja_resultados{
+        width: 48.5rem;
+        margin-left: 83.2rem;
+    }
+    .alimento{
+        height: 8.5rem;
+    }
+    .icono{
+        width: 6.2rem;
+        height: 6rem;
+        left: 5.6rem;
+    }
+    .nombre_fruta{
+        font-size: 2.5rem;
+        left: 20.2rem;
+    }
+    .tipo{
+        font-size: 2rem;
+        right: 1.4rem;
+    }
+    #resultado_busqueda{
+        width: 48.5rem;
+        margin-left: 83.2rem;
+    }
+    .titulo_fruta{
+        font-size: 6rem;
+    }
+    #cerrar_resultados{
+        width: 3rem;
+        height: 3rem;
+    }
+    .info_calorias{
+        font-size: 2rem;
+    }
+    .imagen_fruta{
+        width: 20rem;
+    }
+    .porcentajes{
+        width: 20rem;
+    }
+    .vitaminas_contenidas{
+        width: 19rem;
+        font-size: 2rem;
+        height: 6rem;
+    }
+    .flecha{
+        width: 3.5rem;
+    }
+    .personaje{
+        width: 3.5rem;
+    }
+    .porcentajes p{
+        font-size: 2.5rem;
     }
 }

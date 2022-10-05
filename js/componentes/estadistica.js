@@ -1,4 +1,5 @@
 import { insertar_piramide } from "./piramide.js";
+import { insertar_footer } from "./footer.js";
 
 export function estadistica(){
     function insertar_plato(){
@@ -83,7 +84,7 @@ export function estadistica(){
                 '</div>' +
             '</div>'
         ;
-        caja_2.innerHTML = plato + insertar_piramide;
+        caja_2.innerHTML = plato + insertar_piramide + insertar_footer;
     }
     boton_saltar.addEventListener('click', insertar_plato);
     boton_vamos.addEventListener('click', insertar_plato);

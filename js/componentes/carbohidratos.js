@@ -1,4 +1,5 @@
-export let menu = 
+import { carbohidratos_DATA } from "./DATA/carbohidratos_DATA.js"
+let menu = 
     '<div class="contenedor" id="contenedor">' +
         '<div class="fondo">' + 
             '<div id="menu" class="menu">' + 
@@ -60,41 +61,18 @@ export function pagina_proteina(){
                 '</div>' +
             '</div>' +
             '<div class="seccion_2">' +
-                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/naranja%20carbohidratos.png?raw=true" class="imagen">' +
+                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/personaje%20carbohidratos%20vitaminas.png?raw=true" class="imagen">' +
                 '<div class="titulos_proteina">' + 
                     '<h2 class="titulo_01">' + 'Conoce' + '</h2>' +
                     '<h2 class="titulo_02">' + 'Alimentos' +' </h2>' +
                     '<h2 class="titulo_03">' + 'Ricos en' + '</h2>' +
                     '<h2 class="titulo_04">' + 'Carbohidratos' + '</h2>' +
                 '</div>' +
-                '<div class="alimentos_proteinas">' + 
-                    '<div class="caja_salmon">' + 
-                        '<p>' + 'Pera' + '</p>' +
-                        '<img src="">' +
-                    '</div>' +
-                    '<div class="caja_soja">' + 
-                        '<p>' + 'Piña' + '</p>' +
-                        '<img src="">' +
-                    '</div>' +
-                    '<div class="caja_jamon">' + 
-                        '<p>' + 'Garbanzo' + '</p>' +
-                        '<img src="">' +
-                    '</div>' +
-                    '<div class="caja_lomo">' + 
-                        '<p>' + 'Fresas' + '</p>' +
-                        '<img src="">' +
-                    '</div>' +
-                    '<div class="caja_filete">' + 
-                        '<p>' + 'Uva' + '</p>' +
-                        '<img src="">' +
-                    '</div>' +
-                    '<div class="caja_pierna">' + 
-                        '<p>' + 'Kiwi' + '</p>' +
-                        '<img src="">' +
-                    '</div>' +
+                '<div id="alimentos_carbohidratos">' + 
+                    
                 '</div>' +
                 '<div>' + 
-                    '<img src="" class="decoa">'
+                    '<img src="" class="decoracion">'
                 '</div>' +
             '</div>' +
         '</div>';
@@ -107,5 +85,21 @@ export function pagina_proteina(){
         desplegable.classList.remove("desactivar");
     }
     boton_desplegable.addEventListener('click', menu_desplegable);
+
+    let alimentos_proteinas = ['Pera', 'Piña', 'Garbanzo', 'Fresa', 'Uva', 'Kiwi', 'Limón', 'Mango', 'Naranja', 'Banana'];
+    let contenedor_alimentos = document.querySelector("#alimentos_carbohidratos");
+
+    function agregar_alimentos(){
+        alimentos_proteinas.forEach(function(element, index){
+            let contenedor_carbohidratos = document.createElement("div");
+            contenedor_carbohidratos.innerHTML = 
+                '<p>' + element + '</p>' +
+                '<img src="' + carbohidratos_DATA[index].alimentos_imagenes + '">'
+            ;
+    
+            contenedor_alimentos.appendChild(contenedor_carbohidratos);
+        });
+    }
+    agregar_alimentos();
 }
 pagina_proteina();
