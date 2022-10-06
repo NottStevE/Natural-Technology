@@ -38,25 +38,11 @@
 }
 .caja_grafico_piramide{
     width: 100%;
-    height: 30rem;
+    height: auto;
     margin: 5rem 0 0 0;
-    position: relative;
-}
-.imagen_piramide_movil{
-    position: absolute;
-    top: 0;
-}
-.imagen_piramide_compu{
-    display: none;
-}
-.circulo_piramide{
-    width: 26.2rem;
-    height: 26.2rem;
-    background-color: var(--colorNaranjaOscuro);
-    border-radius: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 6.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .caja_texto_piramide{
     width: 28.7rem;
@@ -183,24 +169,30 @@
     width: 3rem;
     height: 3rem;
 }
+.imagen_piramide{
+    width: 37rem;
+}
 @media screen and (min-width: 1366px){
     .caja_titulo_piramide{
-        height: 40.4rem;
+        height: 24.4rem;
     }
     .caja_titulo_piramide h2{
-        font-size: 15rem;
+        font-size: 10rem;
     }
     .titulo_piramide_1{
-        top: 2rem;
-        left: 20rem;
+        top: 7rem;
+        left: 5rem;
     }
     .titulo_piramide_2{
-        bottom: 2rem;
-        left: 26rem;
+        top: 7rem;
+        left: 48rem;
     }
     .caja_grafico_piramide{
-        margin: 15rem 0 0 0;
-        height: 87.4rem;
+        margin: 10rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
     .imagen_movil{
         display: none;
@@ -211,84 +203,105 @@
         bottom: 0;
         right: 0;
     }
-    .imagen_piramide_movil{
-        display: none;
-    }
     .imagen_piramide_compu{
         display: flex;
-        width: 136.5rem;
-        height: 87.4rem;
+        width: 57.7rem;
+        height: auto;
         position: absolute;
     }
     .circulo_piramide{
-        width: 84.5rem;
-        height: 79.7rem;
-        left: 25.7rem;
+        width: 37.7rem;
+        top: 5rem;
+        height: 37.7rem;
+        left: 10.7rem;
+        bottom: auto;
     }
     .caja_texto_piramide{
-        width: 110.8rem;
+        width: 57.3rem;
     }
     .titulo_piramide{
-        font-size: 15rem;
-        margin: 10rem 0 10rem 0;
+        font-size: 8rem;
+        margin: 0 0 1.7rem 0;
         text-align: center;
     }
     .texto_piramide{
         width: 100%;
-        font-size: 4.5rem;
+        font-size: 2rem;
     }
     .titulos_equipo{
         margin: 7.1rem 0 0 0;
-        height: 28.1rem;
+        height: 19rem;
     }
     .titulos_equipo h2{
-        font-size: 15rem;
+        font-size: 10rem;
+        line-height: 12.1rem;
+        letter-spacing: 0.17em;
     }
     .titulo1{
-        left: 25rem;
+        left: 16.5rem;
     }
     .titulo2{
-        left: 50rem;
-        top: 14.6rem;
+        left: 80rem;
+        top: 0;
     }
     .caja_info_equipo img{
-        width: 50.5rem;
-        height: 44.5rem;
+        width: 38.2rem;
+        height: 35rem;
     }
     .caja_info_equipo{
-        margin-top: 15.3rem;
-        padding: 7rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0 0 5rem 0;
     }
     .caja_info_equipo h2{
-        font-size: 10rem;
-        margin: 0 0 4.1rem 0;
+        font-size: 5rem;
+        margin: 0 0 2rem 0;
     }
     .caja_info_equipo p{
-        font-size: 4rem;
+        font-size: 2rem;
+    }
+    .caja_biologos, .caja_diseñadores, .caja_programadores{
+        width: 38.2rem;
+        height: auto;
+    }
+    .caja_biologos, .caja_programadores{
+        display: flex;
+        flex-direction: column;
+    }
+    .caja_diseñadores{
+        display: flex;
+        flex-direction: column-reverse;
     }
     .biologos_texto, .programadores_texto{
-        padding: 0 0 0 5rem;
-        margin: 0 0 16.1rem 0;
+        padding: 0;
+        margin: 0;
+        text-align: center;
     }
     .diseñadores_texto{
-        padding: 0 5rem 0 0;
-        margin: 0 0 16.1rem 0;
+        padding: 0;
+        margin: 0;
+        text-align: center;
     }
     .caja_mas_info_equipo{
-        width: 112.8rem;
-        height: 53.4rem;
-        margin: 0 0 53rem 0;
+        width: 79.6rem;
+        height: 18rem;
+        margin: 0 0 30rem 0;
     }
     .caja_mas_info_equipo h2{
-        font-size: 15rem;
+        font-size: 5rem;
     }
     .caja_mas_info_equipo div{
-        width: 24.2rem;
-        height: 23.7rem;
-        bottom: -12rem;
+        width: 7.9rem;
+        height: 7.9rem;
+        bottom: -5rem;
     }
     .caja_mas_info_equipo div img{
-        width: 12.8rem;
-        height: 12.8rem;
+        width: 4.2rem;
+        height: 4.2rem;
+    }
+    .imagen_piramide{
+        width: 57.7rem;
     }
 }

@@ -11,19 +11,15 @@ export let insertar_piramide =
             '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/personaje%20piramide.png?raw=true" class="imagen_compu">' +
         '</div>' +
         '<div class="caja_grafico_piramide">' + 
-            '<div class="circulo_piramide">' + 
-            
-            '</div>' +
-            '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/grafico%20piramide.png?raw=true" class="imagen_piramide_movil">' +
-            '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/grafico%20piramide%20compu.png?raw=true" class="imagen_piramide_compu">' +
-        '</div>' +
-        '<div class="caja_texto_piramide">' + 
+            '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/Component%20116.png?raw=true" class="imagen_piramide">' +
+            '<div class="caja_texto_piramide">' + 
             '<h2 class="titulo_piramide">' + 
                 '¿Sabías Qué?' +
             '</h2>' +
             '<p class="texto_piramide">' + 
                 'La pirámide alimenticia o nutricional es una herramienta gráfica que muestra de manera sencilla la cantidad de alimentos (Lácteos, vegetales, frutas, carnes y cereales) que se deben consumir diariamente para tener una dieta balanceada.' +
             '</p>' +
+        '</div>' +
         '</div>' +
     '</div>' +
     '<div class="caja_equipo">' +
@@ -57,10 +53,10 @@ export let insertar_piramide =
                         'A cargo de nuestra apariencia diseñar, realizar y evaluar estrategias y actividades de comunicación gráfica., publicitaria y digital dirigidas a los actores clave del Proyecto.' +
                     '</p>' +
                 '</div>' +
-                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/dise%C3%B1adores.png?raw=true">' +
+                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/Rectangle%2095.png?raw=true">' +
             '</div>' +
             '<div class="caja_programadores">' + 
-                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/programadores.png?raw=true">' +
+                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/Rectangle%2096.png?raw=true">' +
                 '<div class="programadores_texto">' + 
                     '<h2>' + 
                         'Programadores' +
