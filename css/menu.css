@@ -12,10 +12,7 @@
     background-size: cover;
 }
 .menu img{
-    width: 4.6rem;
-    height: 4.6rem;
     cursor: pointer;
-    margin: 2rem 0 0 2.5rem;
 }
 .logo_menu{
     width: 32rem;
@@ -62,7 +59,7 @@
     height: 100%;
     border-top-right-radius: 3rem;
     border-bottom-right-radius: 3rem;
-    position: fixed;
+    position: relative;
     background-color: var(--colorNaranja);
     top: 0;
     left: 0;
@@ -71,7 +68,14 @@
     flex-direction: column;
     align-items: center;
 }
-.menu_desplegable img{
+.close{
+    position: absolute;
+    right: 1.8rem;
+    bottom: 3.4rem;
+    width: 2.5rem;
+    height: auto;
+}
+.menu_img_desplegable{
     width: 11.7rem;
     height: 4.9rem;
     margin: 5.8rem 0 0 0;
@@ -124,7 +128,6 @@
     width: 100%;
     height: auto;
     border-radius: 1rem;
-    position: relative;
 }
 .icono img{
     width: 100%;
@@ -318,6 +321,15 @@
     width: 2.5rem;
     height: auto;
 }
+#close{
+    position: absolute;
+    bottom: 3.4rem;
+    right: 1.8rem;
+    cursor: pointer;
+}
+#boton_menu_desplegable{
+    margin: 2.5rem 0 0 2.5rem;
+}
 @media screen and (min-width: 1366px){
     .contenedor{
         width: 100%;
@@ -325,8 +337,8 @@
     }
     .fondo{
         width: 100%;
-        height: 38.4rem;
-        background-image: url("https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/fondo%20compu.png?raw=true");
+        height: 28.5rem;
+        background-image: url("https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/fondo%20compu%202.png?raw=true");
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -349,7 +361,7 @@
         align-items: center;
     }
     .menu_compu a{
-        font-size: 40px;
+        font-size: 3.5rem;
         color: white;
         text-decoration:none;
     }
@@ -359,37 +371,43 @@
         margin: 0;
     }
     .titulos{
-        margin: 6.6rem 0 0 0;
+        width: 65rem;
+        height: auto;
+        margin: 5.2rem 0 0 65.1rem;
+        text-align: center;
     }
     .titulo_1{
-        font-size: 15rem;
-        margin-left: 147px;
+        font-size: 10rem;
+        margin: 0;
     }
     .titulo_2{
-        font-size: 15rem;
-        margin-left: 355px;
+        font-size: 10rem;
+        margin: 0;
     }
     .titulo_3{
-        font-size: 15rem;
-        margin-left: 248px;
+        font-size: 10rem;
+        margin: 0;
     }
     .titulo_4{
-        font-size: 10rem;
-        margin-left: 322px;
+        font-size: 6rem;
+        margin: 0;
+    }
+    .caja_buscador{
+        margin-top: 11.9rem;
     }
     #buscador{
-        width: 48.5rem;
+        width: 64.6rem;
         height: 6rem;
         font-size: 2rem;
-        margin-left: 83.2rem;
+        margin-left: 66.5rem;
         border-radius: 5rem;
     }
     #buscador::placeholder{
         font-size: 2rem;
     }
     #caja_resultados{
-        width: 48.5rem;
-        margin-left: 83.2rem;
+        width: 58.2rem;
+        margin-left: 69.9rem;
     }
     .alimento{
         height: 8.5rem;
@@ -408,8 +426,8 @@
         right: 1.4rem;
     }
     #resultado_busqueda{
-        width: 48.5rem;
-        margin-left: 83.2rem;
+        width: 58.2rem;
+        margin-left: 69.9rem;
     }
     .titulo_fruta{
         font-size: 6rem;

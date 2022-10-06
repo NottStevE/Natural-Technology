@@ -8,14 +8,14 @@ export let menu =
             '<div class="menu_compu">' + 
                 '<a href="./proteina.html">' + 'Proteínas' + '</a>' +
                 '<a href="./carbohidratos.html">' + 'Carbohidratos' + '</a>' +
-                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu%20compu.png?raw=true">' +
+                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu%20compu.png?raw=true" href="index.html">' +
                 '<a href="./lipidos.html">' + 'Lípidos' + '</a>' +
                 '<a href="./vitaminas.html">' + 'Vitaminas' + '</a>' +
             '</div>' +
-                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/icono%20menu.png?raw=true" id="boton_menu_desplegable" href="index.html">' + 
+                '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/icono%20menu.png?raw=true" id="boton_menu_desplegable">' + 
                 '<div class="fondo_menu desactivar" id="menu_desplegable">' + 
                     '<div class="menu_desplegable">' + 
-                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu%20desplegable.png?raw=true">' +
+                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/logo%20menu%20desplegable.png?raw=true" class="menu_img_desplegable">' +
                         '<div id="boton_bienvenida">' + 
                             '<a href="./index.html">' + 'Bienvenida' + '</a>' +
                         '</div>' +
@@ -34,6 +34,7 @@ export let menu =
                         '<div id="boton_vitaminas">' + 
                             '<a href="./vitaminas.html">' + 'Vitaminas' + '</a>' +
                         '</div>' +
+                        '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/salida%201.png?raw=true" id="close">' +
                     '</div>' +
                 '</div>' +
             '</div>' +
@@ -83,6 +84,12 @@ export function insertar_menu(){
         desplegable.classList.remove("desactivar");
     }
     boton_desplegable.addEventListener('click', menu_desplegable);
+    
+    let close = document.querySelector("#close");
+    function menu_close(){
+        desplegable.classList.add("desactivar");
+    }
+    close.addEventListener('click', menu_close);
 
     //BUSCADOR
 
