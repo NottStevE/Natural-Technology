@@ -59,6 +59,7 @@ export let menu =
                 '<h2 class="titulo_3">' + 'Y CREA UN' + '</h2>' +
                 '<h2 class="titulo_4">' + 'PLATO ¡SALUDABLE!' + '</h2>' +
             '</div>' +
+            '<img src="https://github.com/NottStevE/Imagenes/blob/main/Proyecto%20aps/plato%20compu.png?raw=true" class="plato_img_2">' +
         '</div>' +
     '</div>'
 ;
