@@ -14,6 +14,9 @@
     flex-direction: column;
     border-bottom: 2px solid #EEEEEE;
 }
+.personaje_naranja_2{
+    display: none;
+}
 .titulo_proteinas{
     width: 37.5rem;
     height: auto;
@@ -94,7 +97,7 @@
     height: auto;
     font-family: 'Montserrat';
 }
-.caja_texto_proteina img{
+.decoracion_texto_1, .decoracion_texto_2{
     width: 5.5rem;
     height: 6.5rem;
     position: absolute;
@@ -183,8 +186,99 @@
     bottom: 0;
 }
 .imagen{
-    width: 45rem;
+    width: 35rem;
     height: auto;
+}
+.titulo_propiedades{
+    width: 37.5rem;
+}
+.seccion_3{
+    width: 37.5rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5.8rem;
+}
+.contenedor_info{
+    width: 32rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#info_alimentos_contenedor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+}
+.nombre_fruta_info{
+    font-family: 'Fredoka';
+    font-size: 3rem;
+    color: var(--colorVerdeOscuro);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.info_cal{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.3rem;
+    margin: 1rem 0 0 0;
+    font-weight: 700;
+    position: absolute;
+    top: 4rem;
+}
+.kcal, .cal{
+    padding: 3px 14px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+.kcal{
+    background-color: var(--colorVerde);
+}
+.cal{
+    background-color: var(--colorNaranja);
+    margin: 0 0 0 2rem;
+}
+.imagen_fruta_info{
+    width: 13rem;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.imagen_estadistica_info{
+    width: 31.7rem;
+    height: auto;
+    position: absolute;
+    top: 8.6rem;
+}
+.porcentaje_info{
+    width: 31.9rem;
+    height: auto;
+    position: absolute;
+    top: 31rem;
+}
+.titulo_recordatorio{
+    width: 37.5rem;
+    height: auto;
+    margin-top: 7rem;
+}
+.recordatorio_movil{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.recordatorio_compu{
+    display: none;
 }
 @media screen and (min-width: 1366px){
     .titulo_proteinas{
@@ -196,89 +290,163 @@
         width: 122.8rem;
         height: auto;
         align-items: center;
-        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 13rem;
         margin: 90rem 0 0 0;
     }
     .personaje_naranja{
-        width: 30.7rem;
-        height: 26.8rem;
+        display: none;
+    }
+    .personaje_naranja_2{
+        display: flex;
+        width: 27.2rem;
+        height: auto;
+        margin: 0 0 2rem 0;
     }
     .caja_video{
-        width: 122.8rem;
-        height: 74rem;
+        width: 53.4rem;
+        height: 41.7rem;
         padding: 8.7rem;
     }
     .caja_video iframe{
-        width: 105.3rem;
-        height: 54.3rem;
+        width: 42.9rem;
+        height: auto;
         margin: 0 0 2.6rem 0;
     }
     .caja_video p{
-        font-size: 4rem;
+        font-size: 2rem;
     }
     .caja_video h2{
-        font-size: 4rem;
+        font-size: 2rem;
     }
     .caja_texto_proteina{
         width: 97rem;
         height: 28.4rem;
-        margin: 22.4rem 0 0 0;
+        display: flex;
+        flex-direction: column;
     }
     .caja_texto_proteina p{
-        width: 97rem;
-        height: 28.4rem;
-        font-size: 4.5rem;
+        width: 60.5rem;
+        height: auto;
+        font-size: 2.5rem;
     }
     .decoracion_texto_1{
-        left: -5rem;
-        top: -2rem;
+        width: 7.3rem;
+        height: auto;
+        left: 5rem;
+        top: 0rem;
+    }
+    .decoracion_texto_2{
+        width: 7.3rem;
+        height: auto;
+        bottom: 8rem;
+        right: 4.5rem;
     }
     .titulos_proteina{
-        width: 133.3rem;
-        height: 29.2rem;
+        width: 72.4rem;
+        height: 30.2rem;
+        position: absolute;
+        margin: 15rem 0 0 0;
+        right: 3.6rem;
     }
     .titulos_proteina h2{
-        font-size: 15rem;
+        font-size: 10rem;
         margin: 0;
     }
     .titulo_01{
         top: 0;
-        left: 5rem;
+        left: 18rem;
     }
     .titulo_02{
-        top: 0;
-        right: 5rem;
+        top: 10.5rem;
+        left: 0;
     }
     .titulo_03{
-        top: 14.6rem;
-        left: 5rem;
+        top: 10rem;
+        right: 0;
     }
     .titulo_04{
-        top: 14.6rem;
+        top: 20.5rem;
         right: 5rem;
     }
     .imagen{
-        width: 114.9rem;
+        width: 50.8rem;
         height: auto;
-        margin-top: 2rem;
+        margin-top: 10rem;
         margin-bottom: 6.9rem;
+        position: absolute;
+        left: 10.8rem;
+    }
+    .seccion_2{
+        width: 100%;
     }
     #contenedor_alimentos{
-        width: 122rem;
+        width: 100%;
         height: auto;
-        margin-top: 6.9rem;
+        margin-top: 70rem;
     }
     #contenedor_alimentos div{
-        width: 37rem;
-        height: 33rem;
-        margin: 0 0 6.9rem 0;
+        width: 22.5rem;
+        height: 26.4rem;
+        margin: 0 3rem 6.9rem 3rem;
     }
     #contenedor_alimentos div p{
-        font-size: 5rem;
+        font-size: 4rem;
         top: 3rem;
     }
     #contenedor_alimentos div img{
-        width: 25rem;
-        height: 25rem;
+        width: 20rem;
+        height: auto;
+    }
+    .titulo_propiedades{
+        width: 136.6rem;
+    }
+    .seccion_3{
+        width: 136.6rem;
+        margin-top: 20rem;
+    }
+    .contenedor_info{
+        width: 55.4rem;
+        height: 62.3rem;
+        border-radius: 0.5rem;
+        box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+        padding: 2rem 4rem;
+        margin: 7.5rem 0;
+    }
+    .imagen_fruta_info{
+        width: 20rem;
+        left: 4rem;
+        top: 2rem;
+    }
+    .imagen_estadistica_info{
+        width: 46.2rem;
+        top: 16.7rem;
+    }
+    .porcentaje_info{
+        width: 22.4rem;
+        top: 50rem;
+        left: 4.1rem;
+    }
+    .nombre_fruta_info{
+        font-size: 5rem;
+        top: 2rem;
+        right: 4rem;
+    }
+    .info_cal{
+        font-size: 2rem;
+        top: 8rem;
+        right: 4rem;
+    }
+    .titulo_recordatorio{
+        width: 136.6rem;
+        margin-top: 35rem;
+    }
+    .recordatorio_movil{
+        display: none;
+    }
+    .recordatorio_compu{
+        display: flex;
+        margin: 15rem 0;
     }
 }
